@@ -8,7 +8,6 @@ import java.util.Scanner;
  * @author Zachary Jones
  */
 public class BinaryToOctal {
-
     /**
      * Main method
      *
@@ -20,7 +19,6 @@ public class BinaryToOctal {
         int b = sc.nextInt();
         System.out.println("Octal equivalent: " + convertBinaryToOctal(b));
         sc.close();
-
     }
 
     /**
@@ -32,7 +30,8 @@ public class BinaryToOctal {
      */
     public static String convertBinaryToOctal(int binary) {
         String octal = "";
-        int currBit = 0, j = 1;
+        int currBit = 0;
+        int j = 1;
         while (binary != 0) {
             int code3 = 0;
             for (int i = 0; i < 3; i++) {
@@ -46,5 +45,4 @@ public class BinaryToOctal {
         }
         return octal;
     }
-
 }
